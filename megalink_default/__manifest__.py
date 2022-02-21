@@ -210,6 +210,9 @@
         'git@github.com:vangrow/ndm.git -b 12.0',
         'git@github.com:odoo/enterprise.git -b 12.0',
 
+        # SIRO
+        'https://github.com/ganarganar/siro siro',
+
         # Odoomates
         # ==========================================================================================
         # 'https://github.com/odoomates/odooapps odoomates-odooapps',
