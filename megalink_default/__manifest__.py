@@ -89,16 +89,16 @@
         'l10n_ar_stock',
 
         # Utils
-        'web_search_with_and',
-        'web_widget_bokeh_chart',
-        'auto_backup',
-        'google_map',
-        'web_view_google_map',
-        'mass_editing',
+        #'web_search_with_and',
+        #'web_widget_bokeh_chart',
+        #'auto_backup',
+        #'google_map',
+        #'web_view_google_map',
+        #'mass_editing',
         # 'muk_web_theme',
-        'server_global_parameters',
-        'base_external_dbsource',
-        'mail_activity_board',
+        #'server_global_parameters',
+        #'base_external_dbsource',
+        #'mail_activity_board',
 
     ],
     'data': [
@@ -205,7 +205,7 @@
 
     'git-repos': [
         'https://github.com/leobozzi/cl-megalink.git',
-        'https://github.com/leobozzi/odoo-addons-utils.git',
+        #'https://github.com/leobozzi/odoo-addons-utils.git',
         'git@github.com:vangrow/odoo-modules.git -b 12.0',
         'git@github.com:vangrow/ndm.git -b 12.0',
         'git@github.com:odoo/enterprise.git -b 12.0',
@@ -237,7 +237,7 @@
 
         # 'https://github.com/OCA/business-requirement oca-business-requirement',
         # 'https://github.com/OCA/commission oca-commission',
-        # 'https://github.com/OCA/contract oca-contract',
+        'https://github.com/OCA/contract oca-contract',
         # 'https://github.com/OCA/credit-control oca-credit-control',
         'https://github.com/OCA/crm oca-crm',
         'https://github.com/OCA/currency oca-currency',
