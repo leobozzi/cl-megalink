@@ -69,7 +69,9 @@
         'account_invoice_prices_update',
         'account_move_line_menu',
         'account_usability',
-        'account_payment_term_extension',
+        #'account_payment_term_extension',
+        #'account_payment_term_partner_holiday',
+        #'account_payment_mode',
 
         # Localización
         # All
@@ -112,8 +114,8 @@
         'custom_invoice_report',
         'subscription_plan_change',
         'subscription_ux',
-        'payment_bank_debit',
-
+        #'payment_bank_debit',
+        
         # 'bit_ndm',
         # 'bit_ndm_ftth',
         # 'bit_ndm_ftth_zxr10',
