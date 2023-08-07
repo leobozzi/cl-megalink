@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_statement_document" inherit_id="account.report_statement">
+        <xpath expr="//div[@class='page']//div[@class='pt-2 pb-2']" position="attributes">
+            <attribute name="class">pt-0 pb-0</attribute>
+        </xpath>
+
+        <xpath expr="//table//tbody//tr//td[@class='pt-2 pb-2 pl-0 pr-0']" position="attributes">
+            <attribute name="class">pt-0 pb-0 pl-0 pr-0</attribute>
+        </xpath>
+
+        <xpath expr="//table[@class='table table-borderless m-0']//tbody//tr[@class='pb-2']"
+            position="attributes">
+            <attribute name="class">pb-0</attribute>
+        </xpath>
+
+        <xpath expr="//table[@class='table table-borderless m-0']//tbody//tr/td[@class='pl-0 pr-0']"
+            position="attributes">
+            <attribute name="class">pt-0 pb-0 pl-0 pr-0</attribute>
+        </xpath>
+
+        <xpath expr="//table[@class='table table-borderless']//tr" position="attributes">
+            <attribute name="style">font-size: 12px;</attribute>
+        </xpath>
+    </template>
+</odoo>
