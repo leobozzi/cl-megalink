@@ -17,7 +17,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
-      - "30432:30432"
+      #- "30432:30432"
       #- "8080:8080" # Don't do that in production
     command:
       - --log=true # Don't do that in production
@@ -70,20 +70,20 @@ services:
       - POSTGRES_PASSWORD=${DB_PASSWORD}
     volumes:
       - ${PROJECT_PATH}/postgresql:/var/lib/postgresql/data
-    labels: 
-      - traefik.enable=true
+    #labels: 
+      #- traefik.enable=true
       #----------------------------------------------- routers for: postgres --------------------------------------------------
       # tcp
-      - traefik.tcp.routers.postgres.rule=HostSNI(`*`)
-      - traefik.tcp.routers.postgres.entrypoints=postgres
+      #- traefik.tcp.routers.postgres.rule=HostSNI(`*`)
+      #- traefik.tcp.routers.postgres.entrypoints=postgres
       #- traefik.http.routers.odoo-http.middlewares=redirect@file
-      - traefik.tcp.routers.postgres.tls=false
-      - traefik.tcp.routers.postgres.service=postgres
-      - traefik.tcp.routers.postgres.middlewares=db-ipwhitelist
+      #- traefik.tcp.routers.postgres.tls=false
+      #- traefik.tcp.routers.postgres.service=postgres
+      #- traefik.tcp.routers.postgres.middlewares=db-ipwhitelist
       #====================================================== services ===========================================================
-      - traefik.tcp.services.postgres.loadbalancer.server.port=${DB_PORT}
+      #- traefik.tcp.services.postgres.loadbalancer.server.port=${DB_PORT}
       #===================================================== middlewares =========================================================
-      - traefik.tcp.middlewares.db-ipwhitelist.ipwhitelist.sourcerange=${IP_WHITE_LIST}
+      #- traefik.tcp.middlewares.db-ipwhitelist.ipwhitelist.sourcerange=${IP_WHITE_LIST}
       
       
     networks:
