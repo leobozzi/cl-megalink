@@ -112,6 +112,7 @@
         'custom_invoice_report',
         'subscription_plan_change',
         'subscription_ux',
+        'payment_bank_debit',
 
         # 'bit_ndm',
         # 'bit_ndm_ftth',
